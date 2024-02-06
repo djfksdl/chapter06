@@ -21,7 +21,7 @@ public class Client { // 기본샘플
 		System.out.println("===============");
 		System.out.println("서버에 연결을 요청합니다.");
 
-		socket.connect(new InetSocketAddress("192.168.0.29", 10001)); // 여기는 바로 연결(보내버림) -> 서버에서 accept작동됨
+		socket.connect(new InetSocketAddress("192.168.0.62", 10001)); // 여기는 바로 연결(보내버림) -> 서버에서 accept작동됨
 
 		// 서버가 켜져있어야 우리가 주소를 찾을 수 있음
 		System.out.println("서버에 연결되었습니다.");
@@ -31,8 +31,8 @@ public class Client { // 기본샘플
 		/*
 		 * OutputStream out = new
 		 * FileOutputStream("C:\\javaStudy\\MS949-copy.txt");//여기까지는 빨대 꼽은 상태 -> 꼽는순간 안에
-		 * 내요잉 초기화되어서 같은 파일이름으로 하면 못읽음(일부러 실험한거) OutputStreamWriter osw = new
-		 * OutputStreamWriter(out,"MS949"); //MS949로 바꿔주세요 BufferedWriter bw = new
+		 * 내용이 초기화되어서 같은 파일이름으로 하면 못읽음(일부러 실험한거) / OutputStreamWriter osw = new
+		 * OutputStreamWriter(out,"MS949"); //MS949로 바꿔주세요 / BufferedWriter bw = new
 		 * BufferedWriter(osw); 이전에 썼던거랑 비교하려고 놓음
 		 */
 

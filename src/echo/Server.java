@@ -19,7 +19,7 @@ public class Server { //기본샘플
 		ServerSocket serverSocket = new ServerSocket();
 		
 		//바인딩
-		serverSocket.bind(new InetSocketAddress("192.168.0.29", 10001)); //aaa를 ()안에 넣어줌, 이 아이피와 포트번호를 감시한다.
+		serverSocket.bind(new InetSocketAddress("192.168.0.62", 10001)); //aaa를 ()안에 넣어줌, 이 아이피와 포트번호를 감시한다.
 //		InetSocketAddress aaa = 주소 어쩌고. ;어차피 한번쓸거라 굳이 이름을 만들지 않는다.
 		
 		//서버시작
@@ -28,7 +28,7 @@ public class Server { //기본샘플
 		System.out.println("[연결을 기다리고 있습니다.]");
 		
 		//클라이언트가 접속을 하면 accept()가 실행됨
-		Socket socket = serverSocket.accept();//위에서 지켜보고있다가 누가 오면 바로 실행 될 수 있도록 대기(원래는 메소드 바로 실행되었는데 얘는 누가 와야 실행됨)!  얘네가 소켓 만들어좀. new로 해서 반대쪽과 연결되는!
+		Socket socket = serverSocket.accept();//위에서 지켜보고있다가 누가 오면 바로 실행 될 수 있도록 대기(원래는 메소드 바로 실행되었는데 얘는 누가 와야 실행됨)!  얘네가 소켓 만들어줌. new로 해서 반대쪽과 연결되는!
 //		소켓도 클래스라 필드,메소드,생성자 가지고 있음. 주소를 가지고있음.
 		System.out.println("[클라이언트가 연결되었습니다.]");
 		

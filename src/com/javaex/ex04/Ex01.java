@@ -1,7 +1,5 @@
 package com.javaex.ex04;
 
-import com.javaex.ex03.DigitThreadImpl;
-
 public class Ex01 {
 	
 	public static void main(String[] args) {
